@@ -25,13 +25,11 @@
             let resultadoWhile = "<h3>Usando While:</h3>";
             let resultadoDoWhile = "<h3>Usando Do-While:</h3>";
 
-            // Função para verificar se a senha é válida
             function senhaValida(senha) {
-                if (senha.length < 8) return false; // Verifica o comprimento mínimo
+                if (senha.length < 8) return false; 
                 let temNumero = false;
                 let temLetra = false;
 
-                // Verifica se a senha contém números e letras
                 for (let i = 0; i < senha.length; i++) {
                     if (!isNaN(senha[i])) {
                         temNumero = true;
@@ -42,7 +40,6 @@
                 return temNumero && temLetra;
             }
 
-            // Usando For
             if (senhaValida(senha)) {
                 resultadoFor += "Senha válida!";
             } else {
@@ -50,7 +47,6 @@
             }
             document.getElementById('resultadoFor').innerHTML = resultadoFor;
 
-            // Usando While
             let validaWhile = senhaValida(senha);
             if (validaWhile) {
                 resultadoWhile += "Senha válida!";
@@ -59,7 +55,6 @@
             }
             document.getElementById('resultadoWhile').innerHTML = resultadoWhile;
 
-            // Usando Do-While
             let validaDoWhile = senhaValida(senha);
             do {
                 if (validaDoWhile) {
@@ -67,7 +62,7 @@
                 } else {
                     resultadoDoWhile += "Senha inválida. A senha deve ter no mínimo 8 caracteres, incluindo números e letras.";
                 }
-            } while (false); // O do-while é executado apenas uma vez
+            } while (false); 
             document.getElementById('resultadoDoWhile').innerHTML = resultadoDoWhile;
         }
     </script>

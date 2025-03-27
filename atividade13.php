@@ -25,7 +25,6 @@
             let resultadoWhile = "<h3>Usando While:</h3>";
             let resultadoDoWhile = "<h3>Usando Do-While:</h3>";
 
-            // Função para calcular o fatorial
             function calcularFatorialNumero(n) {
                 if (n < 0) return "Fatorial não definido para números negativos.";
                 if (n === 0 || n === 1) return 1;
@@ -37,12 +36,10 @@
                 return fatorial;
             }
 
-            // Usando For
             const fatorialFor = calcularFatorialNumero(numero);
             resultadoFor += `O fatorial de ${numero} é ${fatorialFor}.`;
             document.getElementById('resultadoFor').innerHTML = resultadoFor;
 
-            // Usando While
             let fatorialWhile = 1;
             if (numero < 0) {
                 fatorialWhile = "Fatorial não definido para números negativos.";
@@ -58,7 +55,6 @@
             resultadoWhile += `O fatorial de ${numero} é ${fatorialWhile}.`;
             document.getElementById('resultadoWhile').innerHTML = resultadoWhile;
 
-            // Usando Do-While
             let fatorialDoWhile = 1;
             if (numero < 0) {
                 fatorialDoWhile = "Fatorial não definido para números negativos.";

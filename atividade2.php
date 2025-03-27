@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Números Pares entre Dois Números</title>
 </head>
+
 <body>
     <h1>Exibição de Números Pares entre Dois Números</h1>
     <form id="numerosParesForm">
@@ -37,28 +39,26 @@
             let resultadoWhile = "<h3>Usando While:</h3>";
             let resultadoDoWhile = "<h3>Usando Do-While:</h3>";
 
-            // Usando For
             for (let i = inicio; i <= fim; i++) {
-                if (i % 2 === 0) { // Verifica se o número é par
+                if (i % 2 === 0) {
                     resultadoFor += `${i} `;
                 }
             }
             document.getElementById('resultadoFor').innerHTML = resultadoFor;
 
-            // Usando While
             let j = inicio;
             while (j <= fim) {
-                if (j % 2 === 0) { // Verifica se o número é par
+                if (j % 2 === 0) {
                     resultadoWhile += `${j} `;
                 }
                 j++;
             }
             document.getElementById('resultadoWhile').innerHTML = resultadoWhile;
 
-            // Usando Do-While
+
             let k = inicio;
             do {
-                if (k % 2 === 0) { // Verifica se o número é par
+                if (k % 2 === 0) {
                     resultadoDoWhile += `${k} `;
                 }
                 k++;
@@ -67,4 +67,5 @@
         }
     </script>
 </body>
+
 </html>

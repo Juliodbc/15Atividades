@@ -25,19 +25,16 @@
             let resultadoWhile = "<h3>Usando While:</h3><table border='1'><tr><th>Celsius</th><th>Fahrenheit</th></tr>";
             let resultadoDoWhile = "<h3>Usando Do-While:</h3><table border='1'><tr><th>Celsius</th><th>Fahrenheit</th></tr>";
 
-            // Função para converter Celsius para Fahrenheit
             function celsiusParaFahrenheit(celsius) {
                 return (celsius * 9 / 5) + 32;
             }
 
-            // Usando For
             for (let i = 0; i <= numero; i++) {
                 resultadoFor += `<tr><td>${i}°C</td><td>${celsiusParaFahrenheit(i).toFixed(2)}°F</td></tr>`;
             }
             resultadoFor += "</table>";
             document.getElementById('resultadoFor').innerHTML = resultadoFor;
 
-            // Usando While
             let j = 0;
             while (j <= numero) {
                 resultadoWhile += `<tr><td>${j}°C</td><td>${celsiusParaFahrenheit(j).toFixed(2)}°F</td></tr>`;
@@ -46,7 +43,6 @@
             resultadoWhile += "</table>";
             document.getElementById('resultadoWhile').innerHTML = resultadoWhile;
 
-            // Usando Do-While
             let k = 0;
             do {
                 resultadoDoWhile += `<tr><td>${k}°C</td><td>${celsiusParaFahrenheit(k).toFixed(2)}°F</td></tr>`;

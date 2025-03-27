@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada de 1 a N</title>
 </head>
+
 <body>
     <h1>Tabuada de 1 a N</h1>
     <form id="tabuadaForm">
@@ -30,13 +32,11 @@
             let resultadoWhile = "<h3>Usando While:</h3>";
             let resultadoDoWhile = "<h3>Usando Do-While:</h3>";
 
-            // Usando For
             for (let i = 1; i <= limite; i++) {
                 resultadoFor += `${multiplicador} x ${i} = ${multiplicador * i}<br>`;
             }
             document.getElementById('resultadoFor').innerHTML = resultadoFor;
 
-            // Usando While
             let j = 1;
             while (j <= limite) {
                 resultadoWhile += `${multiplicador} x ${j} = ${multiplicador * j}<br>`;
@@ -44,7 +44,6 @@
             }
             document.getElementById('resultadoWhile').innerHTML = resultadoWhile;
 
-            // Usando Do-While
             let k = 1;
             do {
                 resultadoDoWhile += `${multiplicador} x ${k} = ${multiplicador * k}<br>`;
@@ -54,4 +53,5 @@
         }
     </script>
 </body>
+
 </html>

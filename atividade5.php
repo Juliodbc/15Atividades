@@ -25,7 +25,6 @@
             let resultadoWhile = "<h3>Usando While:</h3><pre>";
             let resultadoDoWhile = "<h3>Usando Do-While:</h3><pre>";
 
-            // Usando For
             for (let i = 1; i <= numero; i++) {
                 for (let j = 1; j <= i; j++) {
                     resultadoFor += "*";
@@ -35,7 +34,6 @@
             resultadoFor += "</pre>";
             document.getElementById('resultadoFor').innerHTML = resultadoFor;
 
-            // Usando While
             let k = 1;
             while (k <= numero) {
                 let l = 1;
@@ -49,7 +47,6 @@
             resultadoWhile += "</pre>";
             document.getElementById('resultadoWhile').innerHTML = resultadoWhile;
 
-            // Usando Do-While
             let m = 1;
             do {
                 let n = 1;

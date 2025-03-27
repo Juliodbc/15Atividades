@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificação de Números Primos</title>
 </head>
+
 <body>
     <h1>Verificação de Números Primos</h1>
     <form id="primoForm">
@@ -49,7 +51,7 @@
             }
             document.getElementById('resultadoPrimo').innerHTML = resultadoPrimo;
 
-            // Usando For para listar primos até o número informado
+
             for (let i = 2; i <= numero; i++) {
                 if (ehPrimo(i)) {
                     listaPrimosFor += `${i} `;
@@ -57,7 +59,6 @@
             }
             document.getElementById('listaPrimosFor').innerHTML = listaPrimosFor;
 
-            // Usando While para listar primos até o número informado
             let j = 2;
             while (j <= numero) {
                 if (ehPrimo(j)) {
@@ -66,8 +67,7 @@
                 j++;
             }
             document.getElementById('listaPrimosWhile').innerHTML = listaPrimosWhile;
-
-            // Usando Do-While para listar primos até o número informado
+            o
             let k = 2;
             do {
                 if (ehPrimo(k)) {
@@ -79,4 +79,5 @@
         }
     </script>
 </body>
+
 </html>
